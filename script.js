@@ -8,10 +8,10 @@ function isPalindrome(str){
     for( let i = 0; i < str.length; i++) {
 
         if( str[i] === stringInvertida[i].toLowerCase()) {
-            return str === stringInvertida;
+            
         }
 
-        return false
+        return str === stringInvertida;
     }
 
 
@@ -28,13 +28,8 @@ function arrayMaxMin(arr) {
       
         if (arr[i] > arrMax) {
         arrMax = arr[i];
-        } else {
-        arrMax = arrMax;
-        }
-        if (arr[i] < arrMin) {
+        } else if (arr[i] < arrMin) {
         arrMin = arr[i];
-        } else {
-        arrMin = arrMin;
         }
     }
     let newArr = [arrMin, arrMax];
